@@ -1,0 +1,162 @@
+
+/* ---------- TABLET: 800–1279 px ---------- */
+@media (max-width: 1279px) {
+    #Hero-section {
+        padding: 100px 24px;
+        .Content {
+            gap: 32px;
+            #Block .Text { h1 { font-size: 58px; } p { max-width: 370px; } }
+            img { width: 273px; }
+        }
+    }
+
+    #Content-1 {
+        margin: 120px 24px 100px;
+        p:nth-child(2) { font-size: 48px; }
+    }
+
+    #Section-1, #Section-2, #Section-3 { padding: 20px 24px; }
+    #Card-1, #Card-2, #Card-3 {
+        width: 100%;
+        gap: 60px;
+        padding: 64px 50px;
+        .Content { gap: 54px; .Text { gap: 24px; } }
+    }
+    h3 { font-size: 34px; }
+    #Card-2 img { flex: 1; width: auto; height: auto; aspect-ratio: 460 / 333.84; object-fit: contain; }
+    #Card-3 img { flex: 1; width: auto; height: auto; aspect-ratio: 380.43 / 319.19; }
+
+    #Testimonial_section #Carousel_desktop_tablet {
+        h2 { font-size: 48px; }
+        #Quotes { gap: 28px; }
+    }
+
+    #Image_break_section { aspect-ratio: 800 / 533; }
+
+    #Benefits_section {
+        .Content {
+            gap: 100px;
+            #Header h2 { font-size: 48px; }
+            #_3column {
+                flex-direction: column;
+                height: auto;
+                .Call-out, .Call-out:nth-child(2) {
+                    padding: 20px 160px 20px 0;
+                    border-top: 1px solid var(--divider_1);
+                    border-left: 0;
+                    h3 { font-size: 26px; }
+                }
+            }
+        }
+    }
+
+    #CTA_section { height: 517px; #Card .Content > p:first-child { font-size: 34px; } }
+
+    #Expert_section { padding: 160px 80px; .Content p { font-size: 48px; } }
+
+    footer {
+        column-gap: 80px;
+        height: 355px;
+        padding: 32px;
+        #Right_column .Labels .Content { justify-content: space-between; gap: 0; }
+    }
+}
+
+
+/* ---------- MOBIL: 0–799 px ---------- */
+@media (max-width: 799px) {
+    h3 { font-size: 28px; }
+
+    #Hero-section {
+        padding: 40px 16px;
+        .Content {
+            flex-direction: column-reverse;  
+            align-items: stretch;
+            gap: 40px;
+            #Block { gap: 40px; .Text { gap: 16px; h1 { font-size: 40px; } } }
+            img { width: 100%; }
+        }
+    }
+
+    #Content-1 {
+        margin: 120px 16px 100px;
+        p:nth-child(2) { font-size: 32px; }
+    }
+
+    #Section-1, #Section-2, #Section-3 { padding: 0 16px 16px; }
+    #Card-1, #Card-2, #Card-3 {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 70px;
+        padding: 40px 16px;
+        .Content { flex: none; }
+    }
+    #Card-2 { flex-direction: column-reverse; }
+    #Card-1 img, #Card-2 img, #Card-3 img { flex: none; width: 100%; height: auto; }
+    #Card-1 img { aspect-ratio: 460 / 333.84; }
+    #Card-2 img { aspect-ratio: 257 / 204; }
+    #Card-3 img { aspect-ratio: 380.43 / 319.19; }
+
+    #Testimonial_section {
+        padding: 36px;
+        #Carousel_desktop_tablet {
+            gap: 40px;
+            padding: 24px 16px;
+            overflow: hidden;
+            background-color: var(--background_4);
+            h2 { font-size: 32px; }
+            #Quotes {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 0;
+                #Titles {
+                    display: flex;
+                    width: 100%;
+                    section { flex: 1; height: auto; min-width: 0; padding: 16px 12px; }
+                    section .Text {
+                        gap: 8px;
+                        padding: 8px 0 0;
+                        p:first-child { font-size: 12px; font-weight: 500; line-height: 1.1; color: var(--Paragraph); }
+                        p:last-child { color: var(--on_accent_3); }
+                    }
+                }
+                .Quote { padding: 40px 0 0; border-left: 0; p:first-child { font-size: 22px; } }
+            }
+        }
+    }
+
+    #Image_break_section { aspect-ratio: 375 / 250; }
+
+    #Benefits_section {
+        padding: 80px 16px;
+        .Content {
+            gap: 80px;
+            #Header { flex-direction: column; gap: 32px; h2 { font-size: 32px; } }
+            #_3column .Call-out, #_3column .Call-out:nth-child(2) { padding: 20px 0; h3 { font-size: 22px; } }
+        }
+    }
+
+    #CTA_section {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: stretch;
+        height: auto;
+        padding: 50px 40px;
+        #Card { flex: none; height: auto; .Content > p:first-child { font-size: 28px; } }
+        > img { flex: none; height: 232px; }
+    }
+
+    #Expert_section { padding: 160px 24px; .Content p { font-size: 32px; } }
+
+    footer {
+        flex-direction: column;
+        height: auto;
+        gap: 80px;
+        padding: 32px 24px;
+        #Left_column, #Right_column { display: contents; }
+        #Left_column .Logo { order: 1; }
+        #Left_column > p { order: 3; }
+        #Right_column .Labels { order: 2; .Content { justify-content: space-between; gap: 11px; > * { flex: 1; } .button p { white-space: normal; } } }
+        #Right_column > p { order: 4; margin-top: -56px; }
+    }
+}
